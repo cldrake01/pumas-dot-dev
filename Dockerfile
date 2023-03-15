@@ -1,5 +1,4 @@
 # syntax=docker/dockerfile:1
-
 FROM golang:1.19
 
 # Set destination for COPY
@@ -24,3 +23,4 @@ EXPOSE 8080
 
 # Run
 CMD [ "/docker-gs-ping" ]
+CMD [ "golang", "run", "upload.go"]
