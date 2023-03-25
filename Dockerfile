@@ -20,7 +20,3 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /docker-gs-ping
 # the application is going to listen on by default.
 # https://docs.docker.com/engine/reference/builder/#expose
 EXPOSE 8080
-
-# Run
-CMD [ "/docker-gs-ping" ]
-CMD [ "golang", "run", "upload.go"]

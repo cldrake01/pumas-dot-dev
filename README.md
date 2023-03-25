@@ -11,13 +11,3 @@ Notable features:
 ## Want _moar_?!
 
 There is a more advanced example in [olliefr/docker-gs-ping-roach](https://github.com/olliefr/docker-gs-ping-roach) using [CockroachDB](https://github.com/cockroachdb/cockroach).
-
-## Contributing
-
-This was written for an _introduction_ section of the Docker tutorial and as such it favours brevity and pedagogical clarity over robustness. 
-
-Thus, feedback is welcome, but please no nits or pedantry. Ain't nobody got time for that 🙃
-
-## License
-
-[Apache-2.0 License](LICENSE)
