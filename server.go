@@ -52,18 +52,21 @@ func deleteFileHandler(context *fiber.Ctx) {
 }
 
 /*
-gorm methods:
-   	Create(value interface{}) *DB: Insert a new record into the database.
-   	Save(value interface{}) *DB: Insert or update a record in the database.
-   	Updates(values interface{}) *DB: Update the specified columns of a record in the database.
-   	Delete(value interface{}, opts ...interface{}) *DB: Delete a record from the database.
-   	Find(dest interface{}, conds ...interface{}) *DB: Query the database for records that match the specified conditions and store the results in the dest variable.
-   	First(dest interface{}, conds ...interface{}) *DB: Query the database for the first record that matches the specified conditions and store the result in the dest variable.
-   	Raw(sql string, values ...interface{}) *DB: Execute a raw SQL query and store the results in the dest variable.
-   	Where(query interface{}, args ...interface{}) *DB: Add a WHERE clause to a query based on the specified conditions.
-   	Order(value interface{}) *DB: Specify the order in which the query results should be returned.
-   	Limit(n int) *DB: Limit the number of results returned by a query.
-   	Offset(n int) *DB: Offset the starting position of the results returned by a query.
+GORM Methods:
+   	- Create(value interface{}) *DB: Insert a new record into the database.
+   	- Save(value interface{}) *DB: Insert or update a record in the database.
+   	- Updates(values interface{}) *DB: Update the specified columns of a record in the database.
+	- Delete(value interface{}, opts ...interface{}) *DB: Delete a record from the database.
+   	- Find(dest interface{}, conds ...interface{}) *DB: Query the database for records that match the specified
+	conditions and store the results in the dest variable.
+   	- First(dest interface{}, conds ...interface{}) *DB: Query the database for the first record that matches the
+	specified conditions and store the result in the dest variable.
+   	- Raw(sqlxstring, values ...interface{}) *DB: Execute a raw SQL query and store the results in the dest variable.
+   	- Where(query interface{}, args ...interface{}) *DB: Add a WHERE clause to a query based on the specified
+	conditions.
+	- Order(value interface{}) *DB: Specify the order in which the query results should be returned.
+   	- Limit(n int) *DB: Limit the number of results returned by a query.
+   	- Offset(n int) *DB: Offset the starting position of the results returned by a query.
 */
 
 func connect() *gorm.DB {
