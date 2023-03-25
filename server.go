@@ -52,7 +52,7 @@ func deleteFileHandler(context *fiber.Ctx) {
 }
 
 /*
-GORM Methods:
+GORM Methods: https://gorm.io/docs/index.html
    	- Create(value interface{}) *DB: Insert a new record into the database.
    	- Save(value interface{}) *DB: Insert or update a record in the database.
    	- Updates(values interface{}) *DB: Update the specified columns of a record in the database.
